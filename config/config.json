@@ -1,0 +1,18 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "",
+    "database": "tb_user_avatar_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  },
+  "test": {
+    "username": "postgres",
+    "password": "",
+    "database": "tb_user_avatar_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}
