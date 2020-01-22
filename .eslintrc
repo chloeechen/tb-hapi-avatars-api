@@ -1,0 +1,12 @@
+{
+    "plugins": [
+        "xogroup"
+    ],
+    "rules": {
+      "func-style": 0
+    },
+    "extends": [
+        "plugin:xogroup/recommended",
+        "plugin:xogroup/hapijs"
+    ]
+}

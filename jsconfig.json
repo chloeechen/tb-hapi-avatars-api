@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@avatars-plugin/*": ["src/plugins/hapi-avatars-api/*"],
+            "@models/*": ["src/models/*"],
+            "@root/*": ["./*"],
+        }
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/node_modules/*",
+    ]
+}
