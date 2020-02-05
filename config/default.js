@@ -25,7 +25,7 @@ module.exports = {
             issuer: process.env.MEDIA_API_KEY || 'db16e857e9924e71f599e31413fb19d2',
             secret: process.env.MEDIA_API_SECRET || '7aef8b426fa6bfa929cbd4e423e9634e'
         },
-        mediaApi: process.env.MEDIA_API || 'https://media-api.xogrp.com'
+        mediaApi: process.env.MEDIA_API || 'https://qa-media-api.xogrp.com'
     },
     'hapi-cors': {
         origin: ['*']

@@ -1,15 +1,16 @@
 'use strict';
 
-const { memberAvatars } = require('@models/index');
+const { memberAvatars } = require('@models');
+const uploadImageHelper = require('../helpers/upload-image');
 
-async function uploadUserAvatars(request) {
+async function uploadUserAvatars(request, h) {
     const { payload : { memberId, file, imageId } } = request;
-    console.log('ssssss', memberId);
+    console.log('memberId', memberId);
 
-    const imageIdForAvatar = imageId ||  await this.uploadImageHelper(file);
+    const imageIdForAvatar = imageId ||  await uploadImageHelper(file);
     console.log('imageIdForAvatar', imageIdForAvatar);
 
-    return {imageIdForAvatar};
+    return h.response('Create successfully').code(201);
 }
 
 

@@ -37,9 +37,6 @@ module.exports = (sequelize, DataTypes) => {
     }, {
         tableName: 'member_avatars'
     });
-    memberAvatars.associate = function(models) {
-    // associations can be defined here
-    };
 
     return memberAvatars;
 };
